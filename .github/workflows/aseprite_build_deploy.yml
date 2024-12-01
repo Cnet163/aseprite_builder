@@ -54,7 +54,7 @@ jobs:
         body: |
           ${{ steps.version_info.outputs.version_info }}
         draft: true
-        prerelease: false
+        prerelease: ture
   
   build-aseprite:
     name: Build Aseprite
@@ -64,7 +64,7 @@ jobs:
     strategy:
        matrix:
          os: [windows-latest]
-       fail-fast: false    
+       fail-fast: ture    
     steps:
       - name: (Windows) Install dependencies
         if: matrix.os == 'windows-latest'
