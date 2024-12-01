@@ -54,7 +54,7 @@ jobs:
         body: |
           ${{ steps.version_info.outputs.version_info }}
         draft: ture
-        prerelease: ture
+        prerelease: false
   
   build-aseprite:
     name: Build Aseprite
